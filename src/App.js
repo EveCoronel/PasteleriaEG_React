@@ -1,8 +1,12 @@
 import './App.css';
+import NavBar from './components/navBar';
 
 function App() {
   return (
-<h1>Pastelería EG</h1>
+    <div>
+      <h1>Pastelería EG</h1>
+      <NavBar />
+    </div>
   );
 }
 
