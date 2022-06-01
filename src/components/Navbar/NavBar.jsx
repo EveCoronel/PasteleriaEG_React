@@ -8,9 +8,7 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import CartWidget from "../CartWidget/CartWidget";
 import Logo from "./Logo";
 import "./NavBar.css";
@@ -30,7 +28,7 @@ const NavBar = () => {
 
   return (
     <AppBar position="static" className="navBar">
-      <Container className="navBar" maxWidth="xl">
+      <Container className="navBar" maxWidth="false">
         <Toolbar disableGutters>
           <Logo sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
@@ -41,7 +39,7 @@ const NavBar = () => {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              /* fontFamily: "monospace", */
+              fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
